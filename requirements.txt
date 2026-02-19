@@ -1,0 +1,9 @@
+streamlit
+pandas
+plotly
+requests
+beautifulsoup4
+undetected-chromedriver
+selenium
+setuptools
+psycopg2-binary
