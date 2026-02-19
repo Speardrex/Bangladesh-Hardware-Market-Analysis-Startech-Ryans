@@ -7,3 +7,4 @@ undetected-chromedriver
 selenium
 setuptools
 psycopg2-binary
+SQLAlchemy
