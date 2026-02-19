@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import dashboard_ui as ui # ✅ UI Module
 from database import init_db, get_connection, fetch_war_room_intel
-from Ingestion import run_full_infiltration 
+# from Ingestion import run_full_infiltration 
 
 st.set_page_config(page_title="DataNexus Architect", layout="wide")
 
@@ -73,3 +73,4 @@ elif st.session_state.page == "03_WAR_ROOM":
     # 2. Paint the Design perfectly
 
     ui.render_dashboard(master_intel)
+
