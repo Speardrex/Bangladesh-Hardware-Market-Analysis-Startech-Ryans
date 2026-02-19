@@ -38,7 +38,7 @@ if 'page' not in st.session_state: st.session_state.page = "MISSION BRIEF"
 with st.sidebar:
     st.markdown("<h2 style='text-align:center;'>DATANEXUS</h2>", unsafe_allow_html=True)
     if st.button("MISSION BRIEF"): st.session_state.page = "MISSION BRIEF"
-    if st.button("INGESTION"): st.session_state.page = "01_INGESTION"
+    # if st.button("INGESTION"): st.session_state.page = "01_INGESTION"
     if st.button("PROFILING"): st.session_state.page = "02_PROFILING"
     if st.button("DASHBOARD"): st.session_state.page = "03_WAR_ROOM"
 
@@ -71,4 +71,5 @@ elif st.session_state.page == "03_WAR_ROOM":
     master_intel = fetch_war_room_intel() 
     
     # 2. Paint the Design perfectly
+
     ui.render_dashboard(master_intel)
